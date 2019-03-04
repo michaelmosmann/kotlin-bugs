@@ -2,7 +2,7 @@ package de.mosmann.bugs.framework
 
 open class Component {
 
-  fun add(component: Component) {
+  open fun add(component: Component) {
 
   }
 }
