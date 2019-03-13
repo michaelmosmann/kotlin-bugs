@@ -9,8 +9,8 @@ class FieldGenerator(private val fieldFactory: FieldFactory) {
 
   fun addFields(parent: Component, properties: List<Property<out Any>>) {
     properties.forEach{
-      // addField(parent, it) // TODO should compile
-      addField<Any,Fake<Any>>(parent, it) // TODO should not compile??
+      addField(parent, it) // TODO should compile
+      //addField<Any,Fake<Any>>(parent, it) // TODO should not compile??
     }
   }
 
