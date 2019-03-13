@@ -22,7 +22,7 @@ class FieldGenerator(private val fieldFactory: FieldFactory) {
 //    field.setValue(property.value)
 //    parent.add(field)
 //  }
-  
+
   fun <T> addField(parent: Component, property: Property<out T>) {
     val factory = fieldFactory.factoryFor(property.type)
     val field = factory.invoke()
